@@ -66,8 +66,11 @@ nav .profile-link {
 nav .profile-link a {
   color: black;
   border-bottom: 1px solid black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Roboto";
 }
-main {
+.main-container-principal {
   background-image: url(/assets/img/Cover.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -78,7 +81,7 @@ main {
   justify-content: center;
   align-items: center;
 }
-main h1 {
+.main-container-principal h1 {
   font-family: "roboto";
   font-size: 2.5rem;
   font-weight: 500;
