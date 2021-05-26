@@ -2,13 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "sans-serif";
 }
 html {
+  font-size: 62.5%;
 }
 body {
   height: 100vh;
   width: 100vw;
-  background-color: green;
+  overflow: hidden;
 }
 a {
   text-decoration: none;
@@ -17,19 +19,18 @@ a {
 }
 header {
   width: 100%;
-  height: 140px;
+  height: 100px;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 30% 70%;
 }
 
 header .header-icons-container {
   width: 100%;
-  height: 50px;
   display: grid;
   background-color: #47cfac;
 }
 header .header-icons-container .icons {
-  width: 300px;
+  width: 160px;
   height: auto;
   display: flex;
   justify-items: flex-end;
@@ -37,4 +38,65 @@ header .header-icons-container .icons {
   justify-content: space-between;
   justify-self: end;
   margin-right: 50px;
+}
+header .icons span {
+  color: white;
+  font-size: 2rem;
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+nav .nav-logo-container {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+nav .nav-logo-container img {
+  width: 150px;
+  /* margin-top: 10px; */
+  /* margin-bottom: 5px; */
+}
+nav .profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+nav .profile-link a {
+  color: black;
+  border-bottom: 1px solid black;
+}
+main {
+  background-image: url(/assets/img/Cover.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  /* width: 100vw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main h1 {
+  font-family: "roboto";
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: white;
+}
+.main-container {
+  text-align: center;
+  margin-bottom: 196px;
+}
+.main-container button {
+  margin-top: 60px;
+  padding: 6px;
+  background-color: rgb(71, 207, 172);
+  border: solid 1px gray;
+  font-family: "Roboto";
+  font-weight: bolder;
+  cursor: pointer;
+}
+.main-container button:hover {
+  background-color: rgb(153 231 211);
 }
