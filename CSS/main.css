@@ -255,3 +255,7 @@ footer p {
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 15px;
 }
+.hernan {
+  font-family: "Roboto";
+  font-size: 1.2rem;
+}
